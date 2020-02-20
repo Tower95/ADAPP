@@ -24,7 +24,6 @@ namespace ADAPP
         private void UCGrupo_Load(object sender, EventArgs e)
         {
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
         }
 
         private void brn_agregarGrupo_Click(object sender, EventArgs e)

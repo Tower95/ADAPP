@@ -29,7 +29,6 @@ namespace ADAPP
         private void RelacionarGrMateria_Load(object sender, EventArgs e)
         {
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
             Conexion.OptenerGrupos(Grupos, Usuario);
             Conexion.OptenerMaterias(Usuario, Materias);
             LBGrupos.DataSource = Grupos;

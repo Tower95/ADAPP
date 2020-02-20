@@ -23,7 +23,6 @@ namespace ADAPP
         {
 
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
             Conexion.TraerCiclos(Ciclos);
 
             cbCiclo.DataSource = Ciclos;

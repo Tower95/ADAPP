@@ -38,6 +38,7 @@ namespace ADAPP
         /// 
         public void Open()
         {
+            conexionDB = new MySqlConnection(CadenaConexion);
             conexionDB.Open();
         }
         /// <summary>
@@ -47,23 +48,7 @@ namespace ADAPP
         {
             conexionDB.Close();
         }
-        public void Conectar()
-        {
-            try
-            {
-                conexionDB = new MySqlConnection(CadenaConexion);
-
-                Open();
-                
-                close();
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message.ToString());
-            }
-        }
+        
 
    
         /// <summary>
@@ -540,15 +525,15 @@ namespace ADAPP
             while (reader.Read())
             {
 
-                Asistencias.Add(new CAsistencia(
-                      Convert.ToString(reader["Id_Alumno"]),
-                      Convert.ToString(reader["Nombre"]),
-                      Convert.ToString(reader["Apellidos"]),
-                      Convert.ToInt16(reader["Id_Grupo"]),
-                      Convert.ToInt16(reader["Activo"])
+                //Asistencias.Add(new CAsistencia(
+                //      Convert.ToString(reader["Id_Alumno"]),
+                //      Convert.ToString(reader["Nombre"]),
+                //      Convert.ToString(reader["Apellidos"]),
+                //      Convert.ToInt16(reader["Id_Grupo"]),
+                //      Convert.ToInt16(reader["Activo"])
 
 
-                      ));
+                //      ));
             }
             close();
             return Ultima;

@@ -46,7 +46,6 @@ namespace ADAPP
         {
             
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
 
             
         }

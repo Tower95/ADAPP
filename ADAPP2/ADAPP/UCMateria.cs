@@ -60,7 +60,6 @@ namespace ADAPP
         private void UCMateria_Load(object sender, EventArgs e)
         {
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
         }
 
         private void btnAgregarMateria_Click(object sender, EventArgs e)

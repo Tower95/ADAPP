@@ -17,7 +17,6 @@ namespace ADAPP
         {
             InitializeComponent();
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
         }
 
         private void Form1_Load(object sender, EventArgs e)

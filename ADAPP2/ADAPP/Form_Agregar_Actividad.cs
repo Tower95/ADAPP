@@ -24,7 +24,6 @@ namespace ADAPP
         private void Form_Agregar_Actividad_Load(object sender, EventArgs e)
         {
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
         }
 
         private void btn_Guardar_Click(object sender, EventArgs e)

@@ -28,7 +28,6 @@ namespace ADAPP
         private void FormIngrersarAlumno_Load(object sender, EventArgs e)
         {
             Conexion = CConexion.Instance;
-            Conexion.Conectar();
             Conexion.OptenerGrupos(Grupos, User);
             CBGrupos.DataSource = Grupos;
             CBGrupos.DisplayMember = "Nombre_Grupo";
