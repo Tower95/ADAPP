@@ -12,6 +12,8 @@ using System.Windows.Forms;
 namespace ADAPP
 {
     //hi this is a try on hid gud.
+    //TESTING!!!!!!!!!!!dfsdf
+    //NUEVOS CAMBIOS
     class CConexion
     //192.168.0.11
     {
