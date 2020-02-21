@@ -11,7 +11,8 @@ using System.Windows.Forms;
 
 namespace ADAPP
 {
-    //hi this is a try on hid gud.
+    //3w54w345w4assf1223e.
+    //aslkdfjlaskjdflkajslkdfjlkasjdflkjaslkd
     class CConexion
     //192.168.0.11
     {
@@ -49,8 +50,6 @@ namespace ADAPP
             conexionDB.Close();
         }
         
-
-   
         /// <summary>
         /// Este meto concede el acceso a el programa
         /// </summary>
